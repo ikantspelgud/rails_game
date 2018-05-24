@@ -1,0 +1,9 @@
+<h1>Join a Game</h1>
+
+<%= form_tag({controller: "games", action: "join"} , method: "post") do%>
+  <%= label_tag :'Game Name' %>
+  <%= text_field_tag :game_title %>
+  <%= label_tag :'Player Name'%>
+  <%= text_field_tag :player_name %>
+  <%= submit_tag "Join" %>
+<% end %>

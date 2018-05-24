@@ -1,0 +1,8 @@
+<h1>Game#new</h1>
+<p>Find me in app/views/game/new.html.erb</p>
+
+
+<%= form_for @game, url: games_path, html: {class: "new_game_form"} do |f| %>
+  <%= f.text_field :title %>
+  <%= f.submit "Create" %>
+<% end %>
